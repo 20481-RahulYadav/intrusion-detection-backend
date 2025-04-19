@@ -25,7 +25,7 @@ app.add_middleware(
 )
 
 # MongoDB connection
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/intrusion-detection")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://TuneTonicUser:nimda%40007@cluster0.r2ykx.mongodb.net/intrusion-detectionnew")
 client = MongoClient(MONGODB_URI)
 db = client.get_database()
 logs_collection = db.logs
